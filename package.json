@@ -1,0 +1,12 @@
+{
+  "name": "azure-backend-demo",
+  "version": "1.0.0",
+  "main": "server.js",
+  "scripts": {
+    "start": "node server.js"
+  },
+  "dependencies": {
+    "express": "^4.18.2",
+    "@azure/storage-blob": "^12.17.0"
+  }
+}
