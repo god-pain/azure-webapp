@@ -1,0 +1,25 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Upload Demo</title>
+</head>
+<body>
+
+<h2>Upload File to Azure</h2>
+<button onclick="upload()">Upload Sample File</button>
+
+<p id="result"></p>
+
+<script>
+async function upload() {
+    const response = await fetch("/upload", {
+        method: "POST"
+    });
+
+    const text = await response.text();
+    document.getElementById("result").innerText = text;
+}
+</script>
+
+</body>
+</html>
