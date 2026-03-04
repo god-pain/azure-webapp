@@ -6,7 +6,7 @@ app.use(express.static(__dirname));
 app.use(express.json());
  
 const PORT = process.env.PORT || 3000;
-const connectionString = process.env.AZURE_STORAGE_CONNECTION_STRING;
+const connectionString = process.env.STORAGE_STRING;
  
 app.get("/", (req, res) => {
     res.send("Backend is running successfully!");
